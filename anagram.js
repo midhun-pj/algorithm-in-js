@@ -18,8 +18,6 @@ function checkAnagram(str1, str2) {
     charCount[char] = (charCount[char] || 0) + 1
   }
 
-  console.log(charCount)
-
   // Decrease the frequency based on the characters in the second string
   for (let char of str2) {
     if (!charCount[char]) {
@@ -33,5 +31,4 @@ function checkAnagram(str1, str2) {
   return true
 }
 
-
-console.log(checkAnagram('anagrams', 'nagaramf'))
+console.log(checkAnagram('cinema', 'iceman'))
